@@ -1,0 +1,9 @@
+{
+	"name": "adf-databricks-capstone",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d4e64ed9-629a-4db0-9b0a-407eb61ad349",
+		"tenantId": "26af9d76-35fe-404a-b312-869c37aec9c7"
+	}
+}
