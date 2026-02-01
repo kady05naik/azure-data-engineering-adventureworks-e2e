@@ -5,6 +5,8 @@
 			{
 				"name": "ForEach1",
 				"type": "ForEach",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "parameterLookup",
@@ -105,6 +107,8 @@
 			{
 				"name": "parameterLookup",
 				"type": "Lookup",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -137,33 +141,6 @@
 						}
 					},
 					"firstRowOnly": false
-				}
-			},
-			{
-				"name": "Notebook1",
-				"type": "DatabricksNotebook",
-				"dependsOn": [
-					{
-						"activity": "ForEach1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"notebookPath": "/Users/kadambarinaik07@gmail.com/Module"
-				},
-				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
-					"type": "LinkedServiceReference"
 				}
 			}
 		],
