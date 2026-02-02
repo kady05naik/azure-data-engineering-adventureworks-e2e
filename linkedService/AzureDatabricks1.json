@@ -1,6 +1,6 @@
 {
 	"name": "AzureDatabricks1",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureDatabricks",

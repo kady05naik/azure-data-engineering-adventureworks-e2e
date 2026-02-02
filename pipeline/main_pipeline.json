@@ -145,7 +145,7 @@
 			}
 		],
 		"annotations": [],
-		"lastPublishTime": "2026-01-31T23:45:15Z"
+		"lastPublishTime": "2026-02-02T03:01:09Z"
 	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
+	"type": "Microsoft.Synapse/workspaces/pipelines"
 }
